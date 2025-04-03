@@ -4,7 +4,7 @@
 
 > [!note]
 > - Моя личная установка и настройка лаунчера: Скачай и запусти [install_awesome (1.2.14.1141.gaab16bfe-882).bat](https://github.com/N3M1X10/spoty-batch/blob/main/packages/n3m1x10/install_awesome%20(1.2.14.1141.gaab16bfe-882).bat)
-> - Оригинальные установщики: [Spotify Installers](https://docs.google.com/spreadsheets/d/1wztO1L4zvNykBRw7X4jxP8pvo11oQjT0O5DvZ_-S4Ok)
+> - В сборке присутствуют и [прочие варианты установки](https://github.com/N3M1X10/spoty-batch/blob/main/packages/n3m1x10)
 
 # Благодарность❤️
 - [SpotX](https://github.com/SpotX-Official/SpotX)
