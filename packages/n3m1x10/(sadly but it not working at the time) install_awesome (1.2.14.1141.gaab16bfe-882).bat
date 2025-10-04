@@ -8,7 +8,7 @@ setlocal
 
 set "arg=%1"
 if "%arg%" == "admin" (
-	echo ! Started as ADMIN
+	echo [93m[powershell] Started as admin
     echo.
 ) else (
     powershell.exe -Command "Start-Process 'cmd.exe' -ArgumentList '/k \"\"%~f0\" admin\"' -Verb RunAs"
@@ -59,7 +59,7 @@ endlocal
 
 :patcher
 setlocal
-echo [92mLaunching [96mSpotX[92m patcher . . .[0m &echo.
+echo.&echo [92mLaunching [96mSpotX[92m patcher . . .[0m &echo.
 >nul timeout /t 1 /nobreak
 
 :: Lines for changing spotx parameters, each parameter should be separated by a space
@@ -73,4 +73,7 @@ set tls=[Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]:
 %SYSTEMROOT%\System32\WindowsPowerShell\v1.0\powershell.exe ^
 -Command %tls% $p='%param%'; """ & { $(try { iwr -useb %url% } catch { $p+= ' -m'; iwr -useb %url2% })} $p """" | iex
 
-echo Press any key to exit . . . &>nul timeout /t 5 &endlocal&exit
+echo.&echo [93mPress any key to exit . . .
+>nul timeout /t 5
+endlocal
+exit
